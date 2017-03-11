@@ -14,7 +14,6 @@ int setF[]={3,1};
 int setG[]={4,0};
 
 int nextChord(int _lastChord) {
-  //int nxtChrd;
   switch (_lastChord) {
     case 0:
       return randFromList(setA,6);
