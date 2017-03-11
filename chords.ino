@@ -1,19 +1,19 @@
 /*
  */
 
-int randFromList(int _array[], int _size) {
+int randFromList(const int _array[], const int _size) {
     return _array[random(0, _size - 1)];
 }
 
-int setA[]={1, 2, 3, 4, 5, 6};
-int setB[]={4, 6};
-int setC[]={3, 5};
-int setD[]={0, 1, 4, 6};
-int setE[]={0, 5};
-int setF[]={3, 1};
-int setG[]={4, 0};
+const int setA[]={1, 2, 3, 4, 5, 6};
+const int setB[]={4, 6};
+const int setC[]={3, 5};
+const int setD[]={0, 1, 4, 6};
+const int setE[]={0, 5};
+const int setF[]={3, 1};
+const int setG[]={4, 0};
 
-int nextChord(int _lastChord) {
+int nextChord(int const _lastChord) {
     switch (_lastChord) {
         case 0:
             return randFromList(setA, 6);
